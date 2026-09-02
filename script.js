@@ -13,3 +13,25 @@ document.querySelectorAll('nav a').forEach((link) => link.addEventListener('clic
   button.setAttribute('aria-expanded', 'false');
   button.textContent = 'Menu';
 }));
+
+document.querySelector('#contact-form').addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const form = event.currentTarget;
+  const button = form.querySelector('button[type="submit"]');
+  const status = document.querySelector('#form-status');
+
+  button.disabled = true;
+  status.textContent = 'Sending message...';
+
+  try {
+    await emailjs.sendForm('service_q2pwbae', 'template_634tsao', form, {
+      publicKey: 'X_HS_wKQfh-nmdY1c',
+    });
+    form.reset();
+    status.textContent = 'Thanks — your message has been sent.';
+  } catch {
+    status.textContent = 'Message could not be sent. Please try again later.';
+  } finally {
+    button.disabled = false;
+  }
+});
