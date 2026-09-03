@@ -3,46 +3,178 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio of Justin Lee, IT Audit Associate at Crowe Malaysia." />
-    <title>Justin Lee | IT Audit Associate</title>
+    <meta name="description" content="Justin Lee — IT Audit Associate specialising in technology risk, controls, and assurance." />
+    <title>Justin Lee | IT Audit &amp; Technology Risk</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
-    <header class="site-header">
+    <header class="site-header" id="site-header">
       <a class="logo" href="#top" aria-label="Justin Lee home">JL<span>.</span></a>
-      <button class="menu-button" aria-label="Open navigation" aria-expanded="false">Menu</button>
-      <nav aria-label="Main navigation"><a href="#experience">Experience</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
+      <nav aria-label="Main navigation">
+        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
+
     <main id="top">
-      <section class="hero section">
+      <section class="hero section" aria-labelledby="hero-name">
         <p class="eyebrow hero-location">Petaling Jaya, Selangor, Malaysia</p>
         <div class="hero-showcase">
-          <div class="showcase-copy showcase-left"><h1>Justin Lee</h1><p>IT Audit Associate at Crowe Malaysia, assessing technology risks and evaluating IT general controls.</p></div>
-          <figure class="intro-portrait"><img src="assets/justin-portrait-alpha.png" alt="Monochrome portrait of Justin Lee with an ink collage treatment" /></figure>
-          <div class="showcase-copy showcase-right"><h2>IT Audit<br />&amp; Technology Risk</h2><p>Computing and software systems graduate with a practical focus on cybersecurity, controls, and assurance.</p></div>
+          <div class="showcase-copy showcase-left reveal">
+            <h1 id="hero-name">Justin Lee</h1>
+            <p>IT auditor bridging technology, risk and assurance.</p>
+            <div class="hero-actions">
+              <a href="#work">Explore my work <span>&darr;</span></a>
+              <a href="https://www.linkedin.com/in/justin-lee-975227262/" target="_blank" rel="noopener">LinkedIn <span>&nearr;</span></a>
+            </div>
+          </div>
+          <figure class="intro-portrait portrait-reveal">
+            <img src="assets/justin-portrait-alpha.png" alt="Monochrome portrait of Justin Lee with an ink collage treatment" />
+          </figure>
+          <div class="showcase-copy showcase-right reveal">
+            <h2>IT Audit<br />&amp; Technology Risk</h2>
+            <p>Computing and Software Systems graduate with a practical focus on cybersecurity, controls and assurance.</p>
+          </div>
         </div>
         <a class="circle-link" href="#experience" aria-label="View experience">&darr;</a>
       </section>
-      <section class="marquee" aria-label="Areas of focus"><div><span>IT General Controls</span><i>*</i><span>Cybersecurity</span><i>*</i><span>Access Management</span><i>*</i><span>Technology Risk</span><i>*</i><span>COBIT</span><i>*</i><span>IT General Controls</span><i>*</i></div></section>
-      <section class="section experience" id="experience">
-        <div class="section-heading"><p class="eyebrow">01 / Experience</p><p class="small-copy">A blend of audit, technology, research, and mentoring experience.</p></div>
-        <div class="timeline">
-          <article class="role featured-role"><p class="role-date">Jun 2026 - Present</p><span class="timeline-node">01</span><div><p class="role-type">Crowe Malaysia · Full-time · Hybrid</p><h2>IT Audit Associate</h2><p>I support IT audits by assessing technology risks and evaluating IT general controls across access management, cybersecurity, change management, backup and recovery, and audit logging.</p></div></article>
-          <article class="role"><p class="role-date">Oct 2025 - Feb 2026</p><span class="timeline-node">02</span><div><p class="role-type">PVH Brands Australia · Contract</p><h2>Sales Consultant</h2><p>Delivered customer-focused sales consultancy in a fast-paced retail environment, tailoring solutions and products to customer needs.</p></div></article>
-          <article class="role"><p class="role-date">Oct 2023 - Dec 2023</p><span class="timeline-node">03</span><div><p class="role-type">ASTN · Apprenticeship · Remote</p><h2>Research Assistant</h2><p>Conducted research and analysis on potential industry investors, including investing habits, trends, and investment types.</p></div></article>
-          <article class="role"><p class="role-date">Feb 2023 - Oct 2023</p><span class="timeline-node">04</span><div><p class="role-type">University of Melbourne · On-site</p><h2>Peer Mentor</h2><p>Supported first-year students through weekly sessions, transition guidance, and social activities that built community at university.</p></div></article>
-          <article class="role"><p class="role-date">Nov 2022 - Feb 2023</p><span class="timeline-node">05</span><div><p class="role-type">ELID Sdn Bhd · Internship · Petaling Jaya</p><h2>Software Developer</h2><p>Gained hands-on exposure to software development and Azure Cloud Services, including database management.</p></div></article>
+
+      <section class="marquee" aria-label="Areas of focus">
+        <div><span>IT General Controls</span><i>*</i><span>Cybersecurity</span><i>*</i><span>Access Management</span><i>*</i><span>Technology Risk</span><i>*</i><span>COBIT</span><i>*</i><span>IT General Controls</span></div>
+      </section>
+
+      <section class="section experience" id="experience" aria-labelledby="experience-heading">
+        <div class="section-heading">
+          <p class="eyebrow">01 / Experience</p>
+          <p class="small-copy">A technical foundation applied through audit, research, mentoring and delivery.</p>
+        </div>
+        <h2 class="sr-only" id="experience-heading">Experience</h2>
+        <div class="timeline" data-timeline>
+          <article class="role featured-role reveal">
+            <p class="role-date">Jun 2026 — Present</p>
+            <span class="timeline-node">01</span>
+            <div>
+              <p class="role-type">Crowe Malaysia · Full-time · Hybrid</p>
+              <h3>IT Audit Associate</h3>
+              <p>Assess technology environments and test IT general controls across access management, cybersecurity, change management, backup and recovery, and audit logging. Perform walkthroughs, evaluate control design, inspect technical evidence and document audit findings.</p>
+              <ul class="audit-tags" aria-label="IT audit focus areas"><li>ITGC</li><li>Access management</li><li>Cybersecurity</li><li>Change management</li><li>Backup &amp; recovery</li><li>Audit logging</li></ul>
+            </div>
+          </article>
+          <article class="role reveal">
+            <p class="role-date">Oct 2025 — Feb 2026</p>
+            <span class="timeline-node">02</span>
+            <div><p class="role-type">PVH Brands Australia · Contract</p><h3>Sales Consultant</h3><p>Built customer understanding and tailored recommendations in a high-tempo retail environment.</p></div>
+          </article>
+          <article class="role reveal">
+            <p class="role-date">Oct 2023 — Dec 2023</p>
+            <span class="timeline-node">03</span>
+            <div><p class="role-type">ASTN · Apprenticeship · Remote</p><h3>Research Assistant</h3><p>Analysed potential industry investors, investment trends and market behaviour.</p></div>
+          </article>
+          <article class="role reveal">
+            <p class="role-date">Feb 2023 — Oct 2023</p>
+            <span class="timeline-node">04</span>
+            <div><p class="role-type">University of Melbourne · On-site</p><h3>Peer Mentor</h3><p>Supported first-year students through transition guidance, weekly sessions and community-building activities.</p></div>
+          </article>
+          <article class="role reveal">
+            <p class="role-date">Nov 2022 — Feb 2023</p>
+            <span class="timeline-node">05</span>
+            <div><p class="role-type">ELID Sdn Bhd · Internship · Petaling Jaya</p><h3>Software Developer</h3><p>Gained hands-on exposure to software development, Azure Cloud Services and database management.</p></div>
+          </article>
         </div>
       </section>
-      <section class="section about" id="about"><p class="eyebrow">02 / About me</p><div class="about-content"><h2>Technical knowledge meets a practical approach to assurance.</h2><div><p>I hold a Bachelor of Science in Computing and Software Systems from the University of Melbourne. My technical foundation spans Python, Java, JavaScript, C#, MySQL, MongoDB, Microsoft Azure, Git, and Jira.</p><p>That blend of technical and audit experience helps me understand how applications, databases, and cloud environments operate and how to evaluate the controls around them.</p></div></div></section>
-      <section class="section credentials" id="credentials"><div class="section-heading"><p class="eyebrow">03 / Education & credentials</p><p class="small-copy">Continually building capability in technology, audit, and cloud.</p></div><div class="credential-grid"><article><p class="eyebrow">Education</p><h2>University of Melbourne</h2><p>Bachelor of Science, Computing and Software Systems</p><span>Jul 2021 - Sep 2024</span></article><article><p class="eyebrow">Certification</p><h2>Microsoft Certified: Azure Fundamentals</h2><p>Microsoft</p><span>Issued Jun 2025</span></article><article><p class="eyebrow">Certification</p><h2>Digital Industry Project</h2><p>Practera</p><span>Issued Nov 2023</span></article></div></section>
-      <section class="section contact" id="contact"><p class="eyebrow">04 / Get in touch</p><h2>Let's talk about<br />technology risk.</h2><form class="contact-form" id="contact-form"><div class="form-row"><label>Your name<input name="name" type="text" autocomplete="name" required /></label><label>Your email<input name="email" type="email" autocomplete="email" required /></label></div><label>Your message<textarea name="message" rows="4" required></textarea></label><button type="submit">Send message <span>↗</span></button><p class="form-status" id="form-status" aria-live="polite"></p></form><a class="email" href="https://www.linkedin.com/in/justin-lee-975227262/" target="_blank" rel="noopener">Connect on LinkedIn <span>↗</span></a></section>
+
+      <section class="section work" id="work" aria-labelledby="work-heading">
+        <div class="section-heading">
+          <p class="eyebrow">02 / Selected work</p>
+          <p class="small-copy">Selected anonymised examples of how I approach systems, controls and technology risk.</p>
+        </div>
+        <h2 class="work-title reveal" id="work-heading">Control case<br /><span>studies.</span></h2>
+        <div class="case-list">
+          <details class="case-study reveal" open>
+            <summary><span class="case-index">Case 01</span><span class="case-name">Access Management Review</span><span class="case-toggle" aria-hidden="true">+</span></summary>
+            <div class="case-body">
+              <div class="control-diagram"><p class="eyebrow">Control flow</p><ol><li>Request</li><li>Approval</li><li>Provisioning</li><li>Periodic review</li></ol></div>
+              <div class="case-copy"><p class="eyebrow">Scope</p><p>User provisioning, deprovisioning, privileged access and periodic access review.</p><p class="eyebrow">Approach</p><ol class="numbered-list"><li>Understand process</li><li>Identify key controls</li><li>Inspect configurations</li><li>Test supporting evidence</li><li>Document observations</li></ol></div>
+              <div class="case-notes"><p><b>Risk</b>Unauthorised or inappropriate access to systems and data.</p><p><b>Control objective</b>Access is appropriately authorised, provisioned, modified and revoked.</p><p><b>Outputs</b>Control assessment · Process walkthrough · Evidence testing · Risk observations</p><ul class="audit-tags"><li>Joiners</li><li>Movers</li><li>Leavers</li><li>Privileged access</li></ul></div>
+            </div>
+          </details>
+          <details class="case-study reveal">
+            <summary><span class="case-index">Case 02</span><span class="case-name">Change Management Review</span><span class="case-toggle" aria-hidden="true">+</span></summary>
+            <div class="case-body">
+              <div class="control-diagram"><p class="eyebrow">Control flow</p><ol><li>Request</li><li>Approval</li><li>Testing</li><li>Deployment</li></ol></div>
+              <div class="case-copy"><p class="eyebrow">Scope</p><p>Change requests, approvals, testing, deployment and segregation of duties.</p><p class="eyebrow">Approach</p><ol class="numbered-list"><li>Understand change lifecycle</li><li>Identify approval requirements</li><li>Review evidence</li><li>Trace selected changes</li><li>Evaluate control consistency</li></ol></div>
+              <div class="case-notes"><p><b>Risk</b>Unauthorised or inadequately tested changes may affect system integrity or availability.</p><p><b>Control objective</b>System changes are appropriately authorised, tested and approved before production deployment.</p></div>
+            </div>
+          </details>
+          <details class="case-study reveal">
+            <summary><span class="case-index">Case 03</span><span class="case-name">Computer Operations Review</span><span class="case-toggle" aria-hidden="true">+</span></summary>
+            <div class="case-body">
+              <div class="control-diagram"><p class="eyebrow">Control flow</p><ol><li>Schedule</li><li>Run</li><li>Monitor</li><li>Resolve</li></ol></div>
+              <div class="case-copy"><p class="eyebrow">Scope</p><p>Job scheduling, batch processing, monitoring, incident handling and operational handovers.</p><p class="eyebrow">Approach</p><ol class="numbered-list"><li>Map critical operations</li><li>Review run procedures</li><li>Inspect monitoring evidence</li><li>Trace exception handling</li><li>Evaluate escalation practices</li></ol></div>
+              <div class="case-notes"><p><b>Risk</b>Operational failures may go undetected or unresolved, affecting system availability and data processing.</p><p><b>Control objective</b>Computer operations are scheduled, monitored and escalated in a timely and controlled manner.</p><ul class="audit-tags"><li>Batch jobs</li><li>Monitoring</li><li>Incidents</li><li>Escalation</li></ul></div>
+            </div>
+          </details>
+          <details class="case-study reveal">
+            <summary><span class="case-index">Case 04</span><span class="case-name">Third-Party Management Review</span><span class="case-toggle" aria-hidden="true">+</span></summary>
+            <div class="case-body">
+              <div class="control-diagram"><p class="eyebrow">Control flow</p><ol><li>Assess</li><li>Approve</li><li>Monitor</li><li>Review</li></ol></div>
+              <div class="case-copy"><p class="eyebrow">Scope</p><p>Vendor due diligence, risk assessment, contractual expectations, ongoing monitoring and review.</p><p class="eyebrow">Approach</p><ol class="numbered-list"><li>Identify in-scope providers</li><li>Review risk classification</li><li>Inspect due diligence</li><li>Assess monitoring evidence</li><li>Evaluate review governance</li></ol></div>
+              <div class="case-notes"><p><b>Risk</b>Third parties may introduce unmanaged security, operational or compliance risks.</p><p><b>Control objective</b>Third parties are assessed, approved and monitored according to their risk profile.</p><ul class="audit-tags"><li>Due diligence</li><li>Vendor risk</li><li>Contracts</li><li>Monitoring</li></ul></div>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-heading">
+        <p class="eyebrow">03 / About me</p>
+        <div class="about-content">
+          <h2 id="about-heading">Technical knowledge meets a practical approach to assurance.</h2>
+          <div class="about-copy"><p>I hold a Bachelor of Science in Computing and Software Systems from the University of Melbourne. My technical foundation spans software development, databases, cloud environments and modern development workflows.</p><p>That technical background helps me understand how applications, infrastructure, databases and cloud environments operate, and how to evaluate the controls around them.</p></div>
+        </div>
+        <div class="assurance-stack reveal">
+          <div><p class="eyebrow">Technical</p><ul><li>Python</li><li>Azure</li><li>MySQL</li><li>MongoDB</li><li>Git</li><li>Jira</li></ul></div>
+          <div><p class="eyebrow">Assurance</p><ul><li>ITGC</li><li>Access management</li><li>Change management</li><li>Backup &amp; recovery</li><li>Audit logging</li><li>Cybersecurity</li></ul></div>
+          <div class="assurance-progression" aria-label="Software to assurance progression"><span>Software</span><i>&darr;</i><span>Systems</span><i>&darr;</i><span>Controls</span><i>&darr;</i><span>Risk</span><i>&darr;</i><span>Assurance</span></div>
+        </div>
+        <p class="concepts">Frameworks / concepts — COBIT · ITGC · IAM · Cloud · Cybersecurity</p>
+        <aside class="currently reveal" aria-label="Current professional focus"><p class="eyebrow">Currently / 2026</p><dl><div><dt>Role</dt><dd>IT Audit Associate<br />Crowe Malaysia</dd></div><div><dt>Focus</dt><dd>IT General Controls<br />Technology Risk<br />Cybersecurity</dd></div></dl></aside>
+      </section>
+
+      <section class="section credentials" id="credentials" aria-labelledby="credentials-heading">
+        <div class="section-heading"><p class="eyebrow">04 / Education &amp; credentials</p><p class="small-copy">Continually building capability in technology, audit and cloud.</p></div>
+        <h2 class="sr-only" id="credentials-heading">Education and credentials</h2>
+        <div class="credential-grid">
+          <article class="reveal"><p class="eyebrow">Education</p><h3>University of Melbourne</h3><p>Bachelor of Science, Computing and Software Systems</p><span>Jul 2021 — Sep 2024</span></article>
+          <article class="featured-credential reveal"><p class="eyebrow">Certification</p><h3>Microsoft Certified:<br />Azure Fundamentals</h3><p>Microsoft</p><span>Issued Jun 2025</span></article>
+          <article class="reveal"><p class="eyebrow">Certification</p><h3>Digital Industry Project</h3><p>Practera</p><span>Issued Nov 2023</span></article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-heading">
+        <p class="eyebrow">05 / Get in touch</p>
+        <h2 id="contact-heading">Let's talk about<br />technology risk.</h2>
+        <p class="contact-intro">Open to conversations around IT audit, technology risk, cybersecurity and assurance.</p>
+        <div class="contact-actions">
+          <a class="contact-action" href="mailto:jmljustin2003@gmail.com">Email me <span>&nearr;</span></a>
+          <a class="contact-action" href="https://www.linkedin.com/in/justin-lee-975227262/" target="_blank" rel="noopener">LinkedIn <span>&nearr;</span></a>
+          <span class="contact-action unavailable" title="Add assets/justin-lee-resume.pdf to enable this download">Resume / PDF soon</span>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-row"><label>Your name<input name="name" type="text" autocomplete="name" required /></label><label>Your email<input name="email" type="email" autocomplete="email" required /></label></div>
+          <label>Your message<textarea name="message" rows="4" required></textarea></label>
+          <button type="submit">Send message <span>&nearr;</span></button><p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
+      </section>
     </main>
-    <footer><p>© 2026 Justin Lee</p><div><a href="https://www.linkedin.com/in/justin-lee-975227262/" target="_blank" rel="noopener">LinkedIn</a><a href="#top">Back to top ↑</a></div></footer>
+
+    <footer><p>&copy; 2026 Justin Lee</p><div><a href="https://www.linkedin.com/in/justin-lee-975227262/" target="_blank" rel="noopener">LinkedIn</a><a href="#top">Back to top &uarr;</a></div></footer>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
   </body>
